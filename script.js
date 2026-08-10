@@ -1,8 +1,8 @@
 function addTask() {
-    let input = document.getElementById("taskInput");
-    let task = input.value;
 
-    if (task === "") {
+    let task = document.getElementById("taskInput").value;
+
+    if (task == "") {
         alert("Please enter a task");
         return;
     }
@@ -10,25 +10,30 @@ function addTask() {
     let li = document.createElement("li");
 
     let taskText = document.createElement("span");
-    taskText.innerText = task;
+    taskText.innerHTML = task;
 
-    // Mark task as completed
-    taskText.onclick = function () {
-        taskText.classList.toggle("completed");
+    // Complete button
+    let completeButton = document.createElement("button");
+    completeButton.innerHTML = "Complete";
+
+    completeButton.onclick = function() {
+        taskText.style.textDecoration = "line-through";
+        taskText.style.color = "green";
     };
 
     // Delete button
     let deleteButton = document.createElement("button");
-    deleteButton.innerText = "Delete";
+    deleteButton.innerHTML = "Delete";
 
-    deleteButton.onclick = function () {
+    deleteButton.onclick = function() {
         li.remove();
     };
 
     li.appendChild(taskText);
+    li.appendChild(completeButton);
     li.appendChild(deleteButton);
 
     document.getElementById("taskList").appendChild(li);
 
-    input.value = "";
+    document.getElementById("taskInput").value = "";
 }

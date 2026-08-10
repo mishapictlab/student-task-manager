@@ -32,12 +32,16 @@ button {
     cursor: pointer;
 }
 
+
 li {
-    margin: 10px 0;
+    margin: 10px;
     padding: 10px;
-    background-color: #eee;
-    display: flex;
-    justify-content: space-between;
+    background: #eeeeee;
+    list-style: none;
+}
+
+li button {
+    margin-left: 10px;
 }
 
 .completed {
