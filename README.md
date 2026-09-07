@@ -66,4 +66,5 @@ http://localhost:8000
 
 ## Purpose
 
-This project was created as a simple student productivity application and as a practice project for working with HTML, CSS, JavaScript, and Git/GitHub collaboration.
+This project was created as a simple student productivity application and as a practice project for working with HTML, CSS, JavaScript, and Git/GitHub collaboration.This is new edited line
+
