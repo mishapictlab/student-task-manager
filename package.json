@@ -1,0 +1,20 @@
+{
+  "name": "student-task-manager",
+  "version": "1.0.0",
+  "description": "A basic web application that allows students to create and manage a list of tasks. Users can add tasks, mark them as completed, and delete them when they are no longer needed.",
+  "main": "script.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishapictlab/student-task-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishapictlab/student-task-manager/issues"
+  },
+  "homepage": "https://github.com/mishapictlab/student-task-manager#readme"
+}
